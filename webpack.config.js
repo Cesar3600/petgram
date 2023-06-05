@@ -4,7 +4,7 @@ import path from 'path'
 export default {
   output: {
     filename: 'app.bundle.js',
-    path: path.resolve('public'),
+    path: path.resolve('public')
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -25,7 +25,7 @@ export default {
             ]
           }
         }
-      },
+      }
     ]
   }
 }

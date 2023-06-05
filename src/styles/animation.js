@@ -15,7 +15,7 @@ const fadeInKeyframes = keyframes`
 // animación totalmente reutilizable
 export const fadeIn = ({
   time = '1s',
-  type = 'ease' 
+  type = 'ease'
 } = {}) => css`
   animation: ${time} ${fadeInKeyframes} ${type};
 `

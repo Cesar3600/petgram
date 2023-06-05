@@ -1,22 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MdFavoriteBorder } from "react-icons/md"
+import { MdFavoriteBorder } from 'react-icons/md'
 import { fadeIn } from '../styles/animation'
 
 const DEFAULT_IMAGE = 'https://i.imgur.com/LXThhia.jpeg'
 
 export const PhotoCard = ({ id = '', src = DEFAULT_IMAGE, likes = 0 }) => (
-    <article>
-        <a href={`/detail/${id}`}>
-            <ImgWrapper>
-                <Img src={src} alt="card image" />
-            </ImgWrapper>
-        </a>
+  <article>
+    <a href={`/detail/${id}`}>
+      <ImgWrapper>
+        <Img src={src} alt='card image' />
+      </ImgWrapper>
+    </a>
 
-        <Button>
-            <MdFavoriteBorder /> {likes} likes!
-        </Button>
-    </article>
+    <Button>
+      <MdFavoriteBorder /> {likes} likes!
+    </Button>
+  </article>
 )
 
 const ImgWrapper = styled.div`

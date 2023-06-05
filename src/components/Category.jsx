@@ -1,13 +1,14 @@
 import React from 'react'
-import styled from "styled-components";
+import styled from 'styled-components'
 const DEFAULT_IMAGE = 'https://i.imgur.com/LXThhia.jpeg'
 
 export const Category = ({ cover = DEFAULT_IMAGE, path = '/', emoji = '?' }) => (
-    <Anchor
-     href={path}>
-        <Image src={cover} alt="cover image" />
-        {emoji}
-    </Anchor>
+  <Anchor
+    href={path}
+  >
+    <Image src={cover} alt='cover image' />
+    {emoji}
+  </Anchor>
 )
 
 const Anchor = styled.a`
