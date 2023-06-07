@@ -1,10 +1,13 @@
 import React from 'react'
-import { Image } from './styles.js'
+import { Anchor, Image } from './style.js'
 
-const DEFAULT = 'https://i2-prod.dailystar.co.uk/incoming/article27328720.ece/ALTERNATES/s615b/0_he-mysterious-case-of-Skinny-Bob-the-alien-captured-by-the-KGB.jpg'
+const DEFAULT_IMAGE = 'https://pbs.twimg.com/ext_tw_video_thumb/1613975088348688385/pu/img/WWCe8RcTq1Q-0bNX.jpg'
 
-export const Category = ({ cover = DEFAULT }) => {
+export const Category = ({ cover = DEFAULT_IMAGE, path, emoji = '?' }) => {
   return (
-    <Image src={cover} />
+    <Anchor href={path}>
+      <Image src={cover} />
+      {emoji}
+    </Anchor>
   )
 }
